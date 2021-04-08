@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    background:#e68fac;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    overflow: hidden;
+}
+
+.parent {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-horizontal-center {
+    justify-content: center;
+}
+
+.flex-vertical-center {
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.hb-text {
+    font-size: 4em;
+    text-align: center;
+    color: white;
+}
+
+.hb-message {
+    color: white;
+    min-width: 10rem;
+    width: fit-content;
+    text-align: center;
+}
+
+.heart {
+    position: absolute;
+    top: 0;
+    content: url('/heart.svg')
+}
+
+.footer-text {
+    font-size: 0.8rem;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 1;
+    }
+    100%{transform: translateY(100vh)}
+}
